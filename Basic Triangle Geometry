@@ -1,0 +1,18 @@
+print("Determine hypotenuse based on 2 sides")
+#determine hypootenuse of triangle given 2 sides
+import math
+a = int(input("Length of 1st side: "))                             #set parameters of triangle
+b = int(input("Length of 2nd side: "))
+c = a**2 + b**2                                                     #missing second squarerrot but defined in next line
+print("Length of hypotenuse: ", math.sqrt(c))
+input(" ")
+print(" Determine missing side from hypotenuse and a side")
+c = int(input("Enter the length of the hypotenuse: "))
+a = int(input("Enter length of known side: "))
+b = c**2 - a**2
+print(" Length of unknown side is: ", math.sqrt(b))
+                                                                  #joke part
+print("Determine both unknown lengths when only hypotenuse is provided")
+input ("Enter the length of hypotenuse: ")                         # I think this process is impossible but what do I know
+print(" Length of side a is: Your mom")
+print(" Length of side b is: so dumb")
