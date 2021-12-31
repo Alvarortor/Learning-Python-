@@ -1,0 +1,56 @@
+#if then that practice
+import math
+import time
+print("It's time for conversions dickhead")
+print("This system only supports the imperial sistem, sucks to suck bro")
+print("So you starting with inches, feet, yards or miles?")
+n1=input()
+print(" ")
+print("And are we converting to inches, feet, yards, or miles?")
+n2 = input()
+print("Cool so what's the number?")
+value = int(input())
+
+#loops or same unit
+
+if n1 == "inches" and n2 == "inches":
+    ans=value    
+if n1 == "feet" and n2 == "feet":
+    ans=value 
+if n1 == "yards" and n2 == "yards":
+    ans=value    
+if n1 == "miles" and n2 == "miles":
+    ans=value 
+    
+# Smaller unit to larger unit
+
+if n1 == "inches" and n2 == "feet":
+    ans=value / 12
+if n1 == "inches" and n2 == "yards":
+    ans=value / 36  
+if n1 == "inches" and n2 == "miles":
+    ans=value / 63360
+
+if n1 == "feet" and n2 == "yards":
+    ans=value / 3  
+if n1 == "feet" and n2 == "miles":
+    ans=value / 5280
+if n1 == "yards" and n2 == "miles":
+    ans=value/1760
+    
+# From larger to smaller unit
+
+if n1 == "feet" and n2 == "inches":
+    ans=value * 12  
+if n1 == "yards" and n2 == "inches":
+    ans=value * 12
+if n1 == "miles" and n2 == "inches":
+    ans=value * 63360  
+if n1 == "yards" and n2 == "feet":
+    ans=value * 3
+if n1 == "miles" and n2 == "feet":
+    ans=value * 5280
+if n1 == "miles" and n2 == "yards":
+    ans=value * 1760
+    
+print(value, n1, "is equal to ", ans, n2)
